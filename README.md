@@ -5,5 +5,5 @@ In this file you can see the current forecast and if you scroll down you will ha
 
 In this project it has been used the API from OpenWeather: "https://openweathermap.org/current"
 
-The Netlify upload link: https://app.netlify.com/projects/gregarious-croquembouche-b8f8c2/overview
+The Netlify upload link: [https://app.netlify.com/projects/gregarious-croquembouche-b8f8c2/overview](https://weatherapiprojectflaviu.netlify.app/)
 
