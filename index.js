@@ -1,12 +1,6 @@
 const currentCityTag = document.querySelector(".current-city");
 let currentCity = localStorage.getItem("city");
 
-// Daca nu avem oras salvat in localStorage, salvam orasul default, adica Brasov.
-if (!currentCity) {
-  localStorage.setItem("city", "Brasov");
-  currentCity = "Brasov";
-}
-
 // Actualizam orasul afisat pe ecran.
 currentCityTag.innerHTML = currentCity;
 
@@ -33,4 +27,5 @@ document.addEventListener("scroll", () => {
   } else {
     scrollToTopButton.style.display = "none";
   }
+
 });
