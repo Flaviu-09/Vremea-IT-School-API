@@ -37,7 +37,4 @@ arad.addEventListener("click", function () {
 sibiu.addEventListener("click", function () {
   updateWeather("Sibiu");
 });
-brasov.addEventListener("click", function () {
-  updateWeather("Brasov");
 
-});
