@@ -1,21 +1,17 @@
-const currentCityTag = document.querySelector(".current-city");
-let currentCity = localStorage.getItem("city");
+const currentCityTag=document.querySelector('.current-city');
+let currentCityFromLocatStorage=localStorage.getItem('city');
 
-// Actualizam orasul afisat pe ecran.
-currentCityTag.innerHTML = currentCity;
+if(!currentCityFromLocatStorage){
+    localStorage.setItem('city','București');
+    currentCityFromLocatStorage='București';
+}
 
-// Afisam vremea curenta si predictia pe 5 zile.
-displayCurrentWeather(currentCity);
-displayWeatherForecast(currentCity);
+//actualizam pe ecran numele orasului
+currentCityTag.innerHTML=currentCityFromLocatStorage;
 
-const scrollToTopButton = document.getElementById("scrollToTopBtn");
 
-scrollToTopButton.addEventListener("click", function () {
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+displayCurrentWeather(currentCityFromLocatStorage);
+displayWeatherForecast(currentCityFromLocatStorage);
 });
 
 const scrollThreshold = window.innerHeight / 0.6; 
@@ -29,3 +25,4 @@ document.addEventListener("scroll", () => {
   }
 
 });
+
